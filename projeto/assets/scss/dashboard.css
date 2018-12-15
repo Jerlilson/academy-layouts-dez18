@@ -1,5 +1,6 @@
 /* header */
 /* aside */
+/*  footer */
 *,
 *:after,
 *:before {
@@ -10,6 +11,11 @@
 
 html {
   font-size: 16px;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Source Sans Pro", Verdana, sans-serif;
 }
 
 @font-face {
@@ -29,6 +35,45 @@ body {
 body header {
   height: 66px;
   background-color: #464543;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+body header .brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+body header .brand .menu-toggle {
+  display: none;
+}
+
+body header .actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+body header .actions div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body header .actions div:last-child {
+  padding-right: 0px;
+}
+
+body header .actions .username {
+  border-right: 1px solid #555555;
+}
+
+body header .actions .notifications, body header .actions .options {
+  cursor: pointer;
 }
 
 body .content-container {
@@ -38,7 +83,6 @@ body .content-container {
 }
 
 body .content-container aside {
-  border: 1px solid red;
   width: 218px;
   background-color: white;
   color: #464543;
@@ -46,5 +90,49 @@ body .content-container aside {
 }
 
 body .content-container .main-container {
-  border: 1px solid blue;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body .content-container .main-container footer {
+  font-size: 14px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .content-container .main-container footer img {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  body header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body header .brand {
+    width: 100%;
+  }
+  body header .brand .menu-toggle {
+    display: inline;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+  }
+  body header .brand .img-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  body header .actions {
+    display: none;
+  }
+  .content-container aside {
+    display: none;
+  }
 }

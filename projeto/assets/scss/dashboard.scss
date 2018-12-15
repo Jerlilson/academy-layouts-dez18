@@ -3,13 +3,48 @@
 @import 'partials/_fonts';
 
 body {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: flex-start;
 
     header {
         height: #{$header_height}px;	
         background-color: $header_bg_color;
+        color: $header_font_color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .brand {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .menu-toggle {
+                display: none;
+            }
+        }
+
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            div {
+                padding-left: 20px;
+                padding-right: 20px;
+                &:last-child {
+                    padding-right: 0px;
+                }
+            }
+            .username {
+                border-right: 1px solid $header_separator_color;
+            }
+
+            .notifications, .options {
+                cursor: pointer;
+            }
+        }
     }
 
     .content-container {
@@ -18,7 +53,6 @@ body {
         justify-content: space-between;
 
         aside {
-            border: 1px solid red;
             width: #{$aside_width}px;	
             background-color: $aside_bg_color;
             color: $header_bg_color;	
@@ -26,7 +60,60 @@ body {
         }
 
         .main-container {
-            border: 1px solid blue;
+            // width: calc(100vw - #{$aside_width}px);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            main {
+
+            }
+
+            footer { 
+                font-size: #{$footer_font_size}px;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) { 
+    body {
+        header {
+            padding-left: 20px;
+            padding-right: 20px;
+            .brand {
+                width: 100%;
+                .menu-toggle {
+                    display: inline;
+                    background-color: transparent;
+                    border: none;
+                    color: $header_font_color;
+                    font-size: #{$header_menu_icon_size}px;
+                }
+                .img-container {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+            .actions {
+                display: none;
+            }
+        }
+    }
+
+    .content-container {
+        aside {
+            display: none;
         }
     }
 }

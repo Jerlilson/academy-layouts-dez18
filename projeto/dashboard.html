@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link rel="stylesheet" href="assets/scss/dashboard.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
 </head>
+
 <body>
-    <header>TOPO</header>
+    <header>
+        <div class="brand">
+            <button class="menu-toggle">
+                <span class="fas fa-bars"></span>
+            </button>
+            <div class="img-container">
+                <img src="assets/img/marca_topo.svg" alt="">
+            </div>
+        </div>
+        <div class="actions">
+            <div class="username">
+                Nome do Usuário
+            </div>
+            <div class="notifications">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="options">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+    </header>
     <div class="content-container">
         <aside>LATERAL</aside>
         <div class="main-container">
-            <main>PRINCIPAL</main>
-            <footer>RODAPÉ</footer> 
+            <main>
+                <i class="fas fa-home"></i>
+            </main>
+            <footer>
+                <img src="assets/img/fpf.svg" alt="FPF Logo">
+                <div>
+                    &copy; 2018 FPFTech. All Rights Reserved.
+                </div>
+            </footer>
         </div>
     </div>
 </body>
+
 </html>
