@@ -22,6 +22,15 @@ body {
     main {
         h1 {
             font-size: pxToEm(20);
+            @for $i from 1 through 5 {
+                color: lighten(red, $i*10);
+            } 
         }
     }
 }
+
+@for $i from 1 through 6 {
+    .margin-bottom-#{$i*10} {
+        margin-bottom: #{$i*10}px;
+    }
+} 

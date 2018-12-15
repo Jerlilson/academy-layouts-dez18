@@ -1,0 +1,33 @@
+@import 'partials/_variables';
+@import 'partials/_reset';
+@import 'partials/_fonts';
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    header {
+        height: #{$header_height}px;	
+        background-color: $header_bg_color;
+    }
+
+    .content-container {
+        height: calc(100vh - #{$header_height}px);
+        display: flex;
+        justify-content: space-between;
+
+        aside {
+            border: 1px solid red;
+            width: #{$aside_width}px;	
+            background-color: $aside_bg_color;
+            color: $header_bg_color;	
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: #{$aside_font_size}px;
+        }
+
+        .main-container {
+            border: 1px solid blue;
+        }
+    }
+}
