@@ -8,4 +8,9 @@
 
 html {
     font-size: #{$default_font_size}px;
+    font-family: $default_font_family;
+}
+
+body {
+    background-color: $default_background_color;
 }
