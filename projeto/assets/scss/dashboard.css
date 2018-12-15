@@ -87,6 +87,25 @@ body .content-container aside {
   background-color: white;
   color: #464543;
   font-size: 18px;
+  box-shadow: 0 7px 20px 0 rgba(224, 224, 224, 0.5);
+}
+
+body .content-container aside nav {
+  margin-top: 40px;
+}
+
+body .content-container aside nav ul li {
+  height: 25px;
+  padding-left: 25px;
+  margin-bottom: 40px;
+}
+
+body .content-container aside nav ul li a {
+  font-size: 18px;
+  color: #464543;
+  line-height: 23px;
+  letter-spacing: 0.76px;
+  text-decoration: none;
 }
 
 body .content-container .main-container {
