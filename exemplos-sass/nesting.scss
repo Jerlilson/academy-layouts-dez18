@@ -1,0 +1,19 @@
+@import 'partials/_colors';
+
+.info-box {
+    .container {
+        div {
+            .ano {
+                font-weight: bold;
+                font-size: 20px;
+            }
+            p {
+                margin: 0px 0px 10px 0px;
+            }
+            .detalhe {
+                color: $cor_detalhe;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import 'partials/_colors';
+@import 'partials/_fonts';
+@import 'partials/_mixins';
+
+body {
+    color: $texto_padrao;
+    font-family: $fonte_principal;
+
+    .botao-verde {
+        @include gera-botao-topperson(
+            white, 
+            green, 
+            green, 
+            18
+        );
+    }
+}

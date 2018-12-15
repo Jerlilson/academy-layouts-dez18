@@ -1,0 +1,14 @@
+@mixin gera-botao-topperson($texto, $bg, $borda, $tamanho){
+    border: 1px solid $borda;
+    background-color: $bg;
+    color: $texto;
+    font-size: #{$tamanho}px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: $fonte_secundaria;
+    cursor: pointer;
+    &:hover {
+        color: $text_paragrafo;
+        background-color: lighten($bg, 20);
+    }
+}
