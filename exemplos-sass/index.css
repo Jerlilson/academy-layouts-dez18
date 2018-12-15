@@ -1,12 +1,13 @@
 body {
+  font-size: 16px;
   color: #666;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body .botao-verde {
-  border: 1px solid green;
-  background-color: green;
-  color: white;
+body .botao, body .botao-verde {
+  border: 1px solid #666;
+  background-color: #ccc;
+  color: black;
   font-size: 18px;
   padding: 10px;
   border-radius: 10px;
@@ -14,7 +15,16 @@ body .botao-verde {
   cursor: pointer;
 }
 
-body .botao-verde:hover {
+body .botao:hover, body .botao-verde:hover {
   color: #444;
-  background-color: #00e600;
+  background-color: white;
+}
+
+body .botao-verde {
+  background-color: green;
+  color: white;
+}
+
+body main h1 {
+  font-size: 1.25em;
 }

@@ -1,17 +1,27 @@
 @import 'partials/_colors';
 @import 'partials/_fonts';
+@import 'partials/_sizes';
 @import 'partials/_mixins';
+@import 'partials/_functions';
 
 body {
+    font-size: #{$default_font_size}px;
     color: $texto_padrao;
     font-family: $fonte_principal;
 
+    .botao {
+        @include gera-botao-topperson(black, #ccc,#666,18);
+    }
+
     .botao-verde {
-        @include gera-botao-topperson(
-            white, 
-            green, 
-            green, 
-            18
-        );
+        @extend .botao;
+        background-color: green;
+        color: white;
+    }
+
+    main {
+        h1 {
+            font-size: pxToEm(20);
+        }
     }
 }
