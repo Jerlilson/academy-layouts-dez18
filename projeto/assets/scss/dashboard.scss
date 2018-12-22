@@ -1,6 +1,9 @@
-@import 'partials/_variables';
-@import 'partials/_reset';
-@import 'partials/_fonts';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'partials/variables'; 
+@import 'partials/reset';
+@import 'partials/fonts';
+@import 'partials/buttons';
+@import 'partials/common'; 
 
 body {
     display: flex; 
@@ -92,7 +95,30 @@ body {
             justify-content: space-between;
 
             main {
-
+                // TOP, RIGHT, BOTTOM, LEFT
+                margin: 78px 50px 111px 50px;
+                .card.card-wellcome {
+                    .card-body {
+                        img {
+                            width: 154px;
+                        }
+                        h1 {
+                            margin-top: 31px;
+                            margin-bottom: 0px;
+                            color: $default_gray;	
+                            font-size: 18px;	
+                            font-weight: 600;	
+                            letter-spacing: 0.76px;	
+                            line-height: 23px;
+                        }
+                        p {
+                            max-width: 552px;	
+                            font-size: 18px;	
+                            letter-spacing: 0.76px;	
+                            line-height: 23px;
+                        }
+                    }
+                }
             }
 
             footer { 
@@ -134,11 +160,33 @@ body {
                 display: none;
             }
         }
-    }
-
-    .content-container {
-        aside {
-            display: none;
+        .content-container {
+            aside {
+                display: none;
+            }
+            .main-container {
+                main {
+                    margin: 26px 10px 111px 10px;
+                    .card.card-wellcome {
+                        .card-body {
+                            img {
+                                width: 103px;
+                            }
+                            h1 {
+                                margin-top: 19px;
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                            p {
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+               }
+            }
         }
     }
+
+    
 }
