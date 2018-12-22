@@ -10428,10 +10428,10 @@ body {
 }
 
 .card {
-  border: none;
   background-color: white;
   -webkit-box-shadow: 0 4px 9px 0 rgba(235, 235, 235, 0.5);
           box-shadow: 0 4px 9px 0 rgba(235, 235, 235, 0.5);
+  border: none;
   border-radius: 0px;
 }
 
@@ -10654,6 +10654,81 @@ body .content-container .main-container footer img {
   body .content-container .main-container main .card.card-wellcome .card-body p {
     font-size: 12px;
     line-height: 15px;
+  }
+  body .content-container .main-container main .list-container {
+    margin-top: 40px;
+  }
+  body .content-container .main-container main .list-container h2 {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+    font-weight: normal;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list {
+    background-color: white;
+    -webkit-box-shadow: 0 4px 9px 0 rgba(235, 235, 235, 0.5);
+            box-shadow: 0 4px 9px 0 rgba(235, 235, 235, 0.5);
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-group li {
+    border: none;
+    border-radius: 0px;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-group .list-group-item .list-summary {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EEE !important;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-group .list-group-item .list-summary .help-data {
+    width: 65px;
+    margin-right: 10px;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-group .list-group-item .list-summary .help-setor {
+    width: 35px;
+    margin-right: 10px;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-group .list-group-item .list-summary .help-prioridade {
+    width: 100%;
+    margin-right: 10px;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-group .list-group-item .list-summary .help-icon {
+    width: 10px;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-group .list-group-item .list-item-details {
+    padding-top: 20px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-header {
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-header .help-data {
+    width: 65px;
+    margin-right: 10px;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-header .help-setor {
+    width: 35px;
+    margin-right: 10px;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-header .help-prioridade {
+    width: 100%;
+    margin-right: 10px;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-header .help-icon {
+    width: 10px;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-header .help-data, body .content-container .main-container main .list-container .accordion.dashboard-list .list-header .help-setor, body .content-container .main-container main .list-container .accordion.dashboard-list .list-header .help-prioridade {
+    font-weight: 600;
+  }
+  body .content-container .main-container main .list-container .accordion.dashboard-list .list-header .help-data {
+    min-width: 60px !important;
   }
 }
 /*# sourceMappingURL=dashboard.css.map */
